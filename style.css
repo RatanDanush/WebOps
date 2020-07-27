@@ -1,124 +1,151 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Poppins, sans-serif;
+*
+{
+        font-family: Poppins,sans-serif;
 }
-body{
-
-    background-image: url(./images/bg-intro-desktop.png);
-    background-color: hsl(0, 100%, 74%);
-    background-size: cover;
-    background-position: center; 
+.homepage
+{
+        background-image: url(/Users/anuradhamageshkumar/Desktop/huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg);
+        width: 100%;
+        height:100%;
+        position: absolute;
+        z-index: -1;
 }
+.logo
+{
+    z-index: 1;
+    margin:20px 0 0 60px;
 
-.container{
+}
+.introduction
+{
     display: flex;
-    margin: 5% 10%;
-    justify-content: space-between;
+    margin:100px auto;
     
-    /* text-align: center; */
 }
-.introduction{
-   width: 45%;
-   color: white;
+.introtext
+{
+        flex:1;
 }
-#h{
-    margin-top: 30%;
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-weight: bolder;
+.introimage
+{
+        flex:1.4;
+        width: 90%;
 }
-#p{
-    font-weight: lighter;
+.header
+{
+    display:flex;    
+    align-items: center;
 }
-.right{
-    width: 45%;
-
+.introtext h1
+{
+        margin: 80px 10px 20px 40px;
+        font-size: 3em;
 }
-.top{
-    text-align: center;
-    /* padding: 20px; */
-    height: 100px;
-    background-color:hsl(248, 32%, 49%);
-    margin-bottom: 50px;
+.introtext p
+{
+        margin: 40px 70px 20px 40px;
+}
+.but1
+{
     border-radius: 10px;
-    color: white;
-    display: flex;
-    box-shadow: 0 10px  #bb6363;
-}
-.top p{
-    margin: auto;
-    font-weight: lighter;
-}
-
-.right .form{
-    
-    background-color: white;
-    padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px  #bb6363;
-}
-
-.form #form{
-    
-    display: flex;
-    flex-direction: column;
-}
-
-#firstname{
-    height: 60px;
-    margin-bottom: 50px;
-    padding: 25px;
-    border-radius: 5px;
-    border-color: hsl(246, 25%, 77%);
-    font-size: 15px;
-}
-#lastname{
-    height: 50px;
-    margin-bottom: 50px;
-    padding: 25px;
-    border-radius: 5px;
-    border-color: hsl(246, 25%, 77%);
-    font-size: 15px;
-}
-#email{
-    height: 50px;
-    margin-bottom: 50px;
-    padding: 25px;
-    border-radius: 5px;
-    border-color: hsl(246, 25%, 77%);
-    font-size: 15px;
-}
-#password{
-    height: 50px;
-    margin-bottom: 50px;
-    padding: 25px;
-    border-radius: 5px;
-    border-color: hsl(246, 25%, 77%);
-    font-size: 15px;
-}
-#button{
-    height: 50px;
-    background-color: hsl(154, 59%, 51%);
-    border: 0;
-    border-radius: 5px;
-    color: white;
+    width:180px;
+    height:40px;
     text-align: center;
+    font-size: large;
+    background-color: white;
+    box-shadow:0 0 2px;
+    margin:20px 20px 10px 80%;
+    position: absolute;
+    font-family: Poppins,sans-serif;
 }
-#button:hover{
-    background-color: hsl(154, 92%, 19%);
+.but1:hover
+{
+    background-color: chocolate;
+    color: white;
 }
-@media screen and (max-width:800px){
-    .container{
-        flex-direction: column;
-    }
-    .introduction{
-        width: 100%;
-    }
-    .right{
-        width: 100%;
-        margin-top: 50px;
-    }
-    
+.but2
+{
+        border-radius: 30px;
+        background-color: violet;
+        color: white;
+        z-index: 3;
+        margin-left: 40px;
+        width: 30em;
+        height: 5em;
+        border-style: none;
+        font-size: 0.8em;
+        padding: 0;
+        font-weight: bold;
+}
+.card
+{
+        display: flex;
+        width:80%;
+        height:200px;
+        margin:60px 10% 40px 10%;
+        justify-content: space-between;
+        box-shadow: 0 0 3px;
+        border-radius: 20px;
+        padding: 30px 20px 30px 20px;
+
+}
+.card .text p
+{
+        color: rgba(48, 46, 46,0.8);
+}
+.card .text
+{
+        flex:1;
+        margin-left: 30px;
+        margin-top: 20px;
+
+}
+.card .img1
+{
+        flex:1;
+        margin:auto;
+        width: 50%;
+        margin-left: 100px;
+
+}
+.checkbox
+{
+        
+        margin: 180px 25% -5% 25%;
+        height: 170px;
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        border-radius: 25px;
+        box-shadow: 0 0 1px;
+}
+.checkbox h1
+{
+        text-align: center;
+        margin:auto;
+        padding: 50px 0 20px 0;
+}
+.checkbox button
+{
+        border-radius: 25px;
+        background-color: rgb(189, 34, 189);
+        color: white;
+        border-style: none;
+        margin-left:32%;
+        width: 40%;
+        height: 28%;
+        font-size: large;
+}
+.foot
+{
+        background-color: rgb(25, 25, 36);
+        width:100%;
+        height: 50%;
+        position: absolute;
+        z-index: -1;
+}
+.foot .image 
+{
+        margin: 50px 25% 30px 40px;
+        filter: invert(100%);
 }
